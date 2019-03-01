@@ -1,4 +1,8 @@
+install all the libraries
+-------------------------
 python=3.7
 os
 win32com.clinet
 turtle
+chatterbot
+
