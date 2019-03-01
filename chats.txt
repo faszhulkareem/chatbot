@@ -1,0 +1,54 @@
+
+    "Hello",
+    "Hi there!",
+    "How are you doing?",
+    "I'm doing great.",
+    "That is good to hear",
+    "Thank you.",
+    "You're welcome",
+    "I'm fine thanks for asking",
+    "how are you?",
+    "I'm fine",
+    "how was the day?",
+    "It was great.",
+    "awesome!",
+    "yes, how's yours?",
+    "Mine was great.",
+    "who is shahul?",
+    "what's his age?",
+    "his age is 18",
+    "what he is doing",
+    "he is studying MBBS",
+    "In which college?",
+    "Muthukumaran medical college",
+    "how many girlfriends he has?",
+    "well...,its very hard to say:)
+
+
+
+    '''
+import speech_recognition as sr
+
+r = sr.Recognizer()
+while True:
+    with sr.Microphone() as source:
+        print('speak anything: ')
+        audio = r.listen(source)
+
+    try:
+        text = r.recognize_google(audio)
+        print('You:{}'.format(text))
+    except:
+        print("sorry we couldn't recognize your voice")
+
+    req = text
+    res= chatbot.get_response(req)
+
+    if req.strip() == 'bye':
+        print('Bot: bye,see you again')
+        break
+    else:
+        print('Bot: ', res)
+        speak.Speak(res)
+
+    */'''
